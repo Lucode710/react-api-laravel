@@ -1,7 +1,11 @@
 import axios from 'axios';
+import 'dotenv/config';
+
+// Your Laravel URL API setting in .env
+urlAPI = process.env.LARAVEL_URL
 
 const instance = axios.create({
-  baseURL: 'http://localhost:8000', // Imposta l'URL di base del tuo backend Laravel
+  baseURL: urlAPI, 
   headers: {
     Accept: 'application/json',
   },

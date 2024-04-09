@@ -1,7 +1,4 @@
-import React, { useState, 
-  useEffect 
-} 
-  from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import LoadingSpinner from './components/LoadingSpinner';
 
@@ -91,41 +88,3 @@ function App() {
 
 
 export default App;
-
-// const [csrfToken, setCsrfToken] = useState('');
-
-// useEffect(() => {
-//   // Ottieni il token CSRF dall'endpoint apposito di Laravel
-//   async function fetchCsrfToken() {
-//     const response = await axios.get('http://localhost:8000/sanctum/csrf-cookie');
-//     if (response.status === 204) {
-  //       setCsrfToken(getCsrfTokenFromCookies());
-  //       console.log(getCsrfTokenFromCookies());
-  //     }
-  //   }
-  //   fetchCsrfToken();
-  // }, []);
-  
-  // setUsers(
-    //   axios.get('http://localhost:8000/sanctum/csrf-cookie')
-    //   .then(response => {if(response.status === 201 ) 
-    //     axios.get('http://localhost:8000/api/items')
-    //     .then(response => {return response.data})})
-
-
-
-    // useEffect(() => {
-      //   setTimeout(() => {
-        //   fetchCollaborators();
-        //   setIsLoading(false);},1000)
-        // }, []);
-        
-        // const getCsrfTokenFromCookies = () => {
-          //   const cookies = document.cookie.split('; ');
-          //   const csrfCookie = cookies.find(cookie => cookie.startsWith('XSRF-TOKEN='));
-          //   if (csrfCookie) {
-            //     return csrfCookie.split('=')[1];
-    //   }
-    //   return null;
-    // };
-//     );
