@@ -1,3 +1,1 @@
-# React app with Laravel API
-
-## Using Sanctum to CSFR Token
+## React app with integration to manage Laravel API
